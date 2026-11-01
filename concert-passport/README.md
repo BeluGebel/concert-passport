@@ -1,5 +1,8 @@
 # Concert Passport 🎟️
 
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/b1c3cd98-f052-4f94-a84b-e9de00cc606a" />
+
+
 A digital passport for live music fans. Discover concerts, keep track of your live music journey, and connect with a community that shares your passion for music.
 
 ## About the Project
