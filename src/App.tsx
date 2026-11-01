@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router'
-import Navbar from './components/layout/navbar'
-import Home from './pages/home'
-import Explore from './pages/explore'
-import MyPassport from './pages/my-passport'
+import { BrowserRouter, Routes, Route } from 'react-router';
+import Navbar from './components/layout/navbar';
+import Home from './pages/home';
+import Explore from './pages/explore';
+import MyPassport from './pages/my-passport';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         </main>
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

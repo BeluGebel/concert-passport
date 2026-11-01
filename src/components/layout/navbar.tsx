@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router'
+import { NavLink } from 'react-router';
 
 function Navbar() {
   const linkStyles = ({ isActive }: { isActive: boolean }) =>
@@ -6,7 +6,7 @@ function Navbar() {
       isActive
         ? 'bg-purple-600 text-white'
         : 'text-gray-400 hover:bg-white/10 hover:text-white'
-    }`
+    }`;
 
   return (
     <nav className="flex items-center gap-4">
@@ -22,7 +22,7 @@ function Navbar() {
         My Passport
       </NavLink>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

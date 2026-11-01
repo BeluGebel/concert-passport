@@ -6,7 +6,7 @@ function Home() {
         Your concert memories, all in one place.
       </p>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

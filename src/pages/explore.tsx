@@ -6,7 +6,7 @@ function Explore() {
         Discover your next live music experience.
       </p>
     </div>
-  )
+  );
 }
 
-export default Explore
+export default Explore;
