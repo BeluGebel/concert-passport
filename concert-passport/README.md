@@ -1,75 +1,107 @@
-# React + TypeScript + Vite
+# Concert Passport 🎟️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A digital passport for live music fans. Discover concerts, keep track of your live music journey, and connect with a community that shares your passion for music.
 
-Currently, two official plugins are available:
+## About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Concert Passport is a web application designed to enhance the live music experience beyond the event itself. It brings concert discovery, personal memories, and fan community interactions together in one place.
 
-## React Compiler
+This project is currently under active development.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **React** — UI library
+- **TypeScript** — Type-safe JavaScript
+- **Vite** — Development environment and build tool
+- **Tailwind CSS** — Utility-first styling
+- **React Router** — Client-side routing
+- **Vitest** — Unit and component testing
+- **React Testing Library** — Component testing utilities
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js (v20 or later recommended)
+- npm
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
 
+Clone the repository:
+
+```bash
+git clone https://github.com/BeluGebel/concert-passport.git
+cd concert-passport
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
 ```
+
+### Development
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at the local URL provided by Vite (usually `http://localhost:5173`).
+
+### Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+### Testing
+
+Run tests:
+
+```bash
+npm run test
+```
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   └── layout/
+├── pages/
+├── test/
+├── App.tsx
+├── index.css
+└── main.tsx
+```
+
+## Current Features
+
+- Initial application setup
+- Client-side navigation
+- Home page
+- Concert discovery page (in progress)
+- Personal concert passport page (in progress)
+- Testing environment setup
+
+## Roadmap
+
+- [ ] Build the concert discovery experience
+- [ ] Implement event search and filtering
+- [ ] Add concert bookmarking
+- [ ] Develop the personal concert passport
+- [ ] Build fan community features
+- [ ] Improve accessibility and responsive design
+- [ ] Expand unit and integration test coverage
+
+## Status
+
+This project is a work in progress. Features and documentation will evolve as development progresses.
+
+---
+
+Created with 💜 for live music fans.
